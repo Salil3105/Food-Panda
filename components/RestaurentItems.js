@@ -9,7 +9,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 export const localRestaurants = [
     {
-        name: "BeachSide Bar",
+        name: "BeachSide Bar!",
         image_url: "https://i.pinimg.com/474x/8d/3e/40/8d3e408a28ce796ec66df4d302f21e0b--swinging-chair-beach-bars.jpg",
         categories: ["Cafe", "Bar"],
         price: "$$",
