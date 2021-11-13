@@ -4,7 +4,6 @@ import {
     Text,
     Image,
     ScrollView,
-    
 } from 'react-native'
 
 const items = [
@@ -39,24 +38,24 @@ const items = [
 ]
 export default function Categories() {
     return (
-        <View style={{marginTop:5, backgroundColor: '#fff', paddingVertical: 3, paddingLeft:20 }}>
+        <View style={{ marginTop: 5, backgroundColor: '#fff', paddingVertical: 3, paddingLeft: 20 }}>
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                 {/* Loop Starts Here */}
-                {items.map((item,index)=>(
-                    <View key={index} style={{alignItems:'center',marginRight: 21, marginTop:10}}>
-                        <Image 
-                            source={item.image} 
+                {items.map((item, index) => (
+                    <View key={index} style={{ alignItems: 'center', marginRight: 21, marginTop: 10 }}>
+                        <Image
+                            source={item.image}
                             style={{
                                 width: 50,
                                 height: 40,
-                                resizeMode:'contain'
+                                resizeMode: 'contain'
                             }}
                         />
-                        <View style={{marginTop:10,}}>
+                        <View style={{ marginTop: 10, }}>
                             <Text
                                 style={{
-                                    fontSize:13,
-                                    fontWeight:"900",
+                                    fontSize: 13,
+                                    fontWeight: "900",
                                 }}
                             >{item.text}</Text>
                         </View>
@@ -65,5 +64,5 @@ export default function Categories() {
                 {/* Loop Ends Here */}
             </ScrollView >
         </View>
-    );
+    )
 }

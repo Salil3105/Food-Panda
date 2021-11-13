@@ -7,7 +7,7 @@ import Categories from '../components/Categories'
 import RestaurentItems, { localRestaurants } from '../components/RestaurentItems'
 
 const YELP_API_KEY =
-    "bdRJutLhFAQJ36t7b89CWjHFBU4OKzjt9wvZzcY-nkgmvTqlNMjZWV1eG7iBQ9R74SyfxRg9LWnBAkZY06BtAZAe4d2dfX-2vuX8a1l5V7foctHfX9UKEyoM5ts3YXYx";
+    "E73ZL9fLLLQjECCLjbxTb06zvFnmrr_oP3EctQfvMaVNacR6pVjFSYLvFDvDJVdXTxBGnQBhuGu2MhMtHB-IJcka7KryGCcAy2SatwrjdA-pPJBWJyW2jvNYXIaJYXYx";
 
 export default function Home() {
 
@@ -16,7 +16,8 @@ export default function Home() {
     // ------------------------------------- API Calling ---------------------------------------
 
     const getRestaurantFromYelp = () => {
-        const yelpUrl = "https://api.yelp.com/v3/businesses/search?term=restaurants&location=LosAngeles";
+
+        const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=restaurants&location=SanFansico`;
         const apiOptions = {
             headers: {
                 Authorization: `Bearer ${YELP_API_KEY}`,
@@ -28,7 +29,7 @@ export default function Home() {
     };
 
     useEffect(() => {
-        // getRestaurantFromYelp()
+        getRestaurantFromYelp()
     }, []);
 
     // -----------------------------------------------------------------------------------------
