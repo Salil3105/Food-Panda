@@ -13,7 +13,7 @@ export default function Home() {
 
     const [restaurantData, setRestaurantData] = useState(localRestaurants)
 
-    // ------------------------------------- API Calling ---------------------------------------
+    // -------------------------------------- API Calling ----------------------------------------
 
     const getRestaurantFromYelp = () => {
 
