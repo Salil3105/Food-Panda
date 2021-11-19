@@ -17,7 +17,7 @@ export default function Home() {
 
     const getRestaurantFromYelp = () => {
 
-        const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=restaurants&location=SanFansico`;
+        const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=restaurants&location=LosAngelees`;
         const apiOptions = {
             headers: {
                 Authorization: `Bearer ${YELP_API_KEY}`,
